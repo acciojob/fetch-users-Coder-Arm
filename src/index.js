@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import {TableProvider} from "./context/TableContext";
 
 
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+<TableProvider>
+<App />
+</TableProvider>
+, document.getElementById("root"));
